@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 1s;
+}
+
+.lid {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff6f61;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: transform 1s;
+}
+
+.box-content {
+    display: none;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(150%);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff6f61;
+}
+
+.birthday-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #888;
+}
